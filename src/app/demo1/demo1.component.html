@@ -1,0 +1,19 @@
+<div>
+    <ul class="box">
+        <ol *ngFor="let i of obj" (click)="test(i)">{{i.name}}</ol>
+        <ol>{{xuxuDemo.name}}</ol>
+    </ul>
+
+    <label>请输入名称：
+        <input placeholder="请输入名称" [(ngModel)]="name" />
+    </label>
+
+    <div>{{name}}</div>
+    <button (click)="submit()">提交</button>
+
+    <div>
+        <nav>
+            <a routerLink="/demo2">点击跳转</a>
+        </nav>
+    </div>
+</div>
