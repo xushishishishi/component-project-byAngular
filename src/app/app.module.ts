@@ -9,13 +9,15 @@ import { HttpClientModule }    from '@angular/common/http';
 // import { InMemoryDataService }  from './in-memory-data.service';
 import { Demo1Component } from './demo1/demo1.component';
 import { Demo2Component } from './demo2/demo2.component';
+import { Demo2ChildComponent } from './demo2-child/demo2-child.component';
 
 @NgModule({
   // 属于此NgModule 的组件，指令和管道……自身组件
   declarations: [
     AppComponent,
     Demo1Component,
-    Demo2Component
+    Demo2Component,
+    Demo2ChildComponent
   ],
   // 在此 NgModule中声明的组件模板需要其类导出的其他模块……导入的组件
   imports: [

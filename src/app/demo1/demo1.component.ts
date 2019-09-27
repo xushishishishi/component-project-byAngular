@@ -24,13 +24,24 @@ export class Demo1Component implements OnInit {
     { id: 10, name: 'Tornado' }
   ]
   name = "2"
+  values = ""
 
   test(i) {
     console.log(i.id, this.name)
   }
 
   submit() {
-    console.log(this.name)
+    console.log("submit", this.name)
+  }
+
+  onKey(event: any) { // without type info
+    this.values = event.target.value + ' | ';
+    console.log('onKey:', this.values)
+  }
+
+  onBlur(event: any) { // without type info
+    this.values = event.target.value + ' || ';
+    console.log('onKey:', this.values)
   }
 
   xuxuDemo = new XuxuClass(11, "Class类new出来的对象")

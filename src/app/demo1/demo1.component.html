@@ -5,10 +5,14 @@
     </ul>
 
     <label>请输入名称：
-        <input placeholder="请输入名称" [(ngModel)]="name" />
+        <input placeholder="请输入名称" [(ngModel)]="name" (blur)="onBlur($event)"/>
     </label>
-
-    <div>{{name}}</div>
+    <br>
+    <label>
+        请输入昵称：
+        <input placeholder="请输入昵称" [(ngModel)]="nickName" (keyup)="onKey($event)" />
+    </label>
+    <br>
     <button (click)="submit()">提交</button>
 
     <div>

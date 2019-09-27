@@ -7,7 +7,7 @@ import { Location } from '@angular/common';
   styleUrls: ['./demo2.component.css']
 })
 export class Demo2Component implements OnInit {
-
+  public msg = '这是父组件的数据';
   constructor(
     private location: Location
   ) {
