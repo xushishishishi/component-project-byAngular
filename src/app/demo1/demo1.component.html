@@ -1,23 +1,33 @@
-<div>
+<div class="content">
     <ul class="box">
         <ol *ngFor="let i of obj" (click)="test(i)">{{i.name}}</ol>
         <ol>{{xuxuDemo.name}}</ol>
     </ul>
 
-    <label>请输入名称：
-        <input placeholder="请输入名称" [(ngModel)]="name" (blur)="onBlur($event)"/>
-    </label>
-    <br>
-    <label>
-        请输入昵称：
-        <input placeholder="请输入昵称" [(ngModel)]="nickName" (keyup)="onKey($event)" />
-    </label>
-    <br>
+    <div class="formWrap">
+        <label>请输入名称：
+            <input placeholder="请输入名称" [(ngModel)]="name" (blur)="onBlur($event)" />
+        </label>
+    </div>
+    <div class="formWrap">
+        <label>
+            请输入昵称：
+            <input placeholder="请输入昵称" [(ngModel)]="nickName" (keyup)="onKey($event)" />
+        </label>
+    </div>
+
     <button (click)="submit()">提交</button>
 
-    <div>
+    <div class="routerWrap">
         <nav>
-            <a routerLink="/demo2">点击跳转</a>
+            <ul class="box">
+                <ol>
+                    <a routerLink="/demo2">Demo2</a>
+                </ol>
+                <ol>
+                    <a routerLink="/parent1">Parent1</a>
+                </ol>
+            </ul>
         </nav>
     </div>
 </div>

@@ -1,10 +1,20 @@
+.content {
+    padding: 16px 32px;
+}
 .box {
     color: red;
 }
 
 .box > ol {
     cursor: pointer;
+    margin-bottom: 16px;
     /* background-color: teal; */
+}
+.formWrap {
+    margin-bottom: 16px;    
+}
+.routerWrap{
+    margin-top: 16px;    
 }
 .selectedOlWrap {
     background-color: yellow;
