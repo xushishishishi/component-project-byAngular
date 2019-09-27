@@ -11,6 +11,11 @@ export class Parent1Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.run()
   }
 
+  run(){
+    alert('这是父组件的run方法');
+  }
+  
 }

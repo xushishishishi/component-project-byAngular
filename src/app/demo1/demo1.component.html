@@ -1,7 +1,7 @@
 <div class="content">
     <ul class="box">
-        <ol *ngFor="let i of obj" (click)="test(i)">{{i.name}}</ol>
-        <ol>{{xuxuDemo.name}}</ol>
+        <li *ngFor="let i of obj" (click)="test(i)">{{i.name}}</li>
+        <li>{{xuxuDemo.name}}</li>
     </ul>
 
     <div class="formWrap">
@@ -21,12 +21,18 @@
     <div class="routerWrap">
         <nav>
             <ul class="box">
-                <ol>
-                    <a routerLink="/demo2">Demo2</a>
-                </ol>
-                <ol>
-                    <a routerLink="/parent1">Parent1</a>
-                </ol>
+                <li>
+                    <a class = "linkWrap" routerLink="/demo2">跳转到Demo2页：路由跳转</a>
+                </li>
+                <li>
+                    <a class = "linkWrap" routerLink="/parent1">跳转到Parent1页：父组件给子组件传值的第一种方式</a>
+                </li>
+                <li>
+                    <a class = "linkWrap" routerLink="/parent2">跳转到Parent2页：父组件给子组件传值的第二种方式</a>
+                </li>
+                <li>
+                    <a class = "linkWrap" routerLink="/serviceDemo">跳转到ServiceDemo页：服务</a>
+                </li>
             </ul>
         </nav>
     </div>

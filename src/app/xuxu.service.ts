@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { XuxuClass } from './xuxu-class';
-import { xuxuTestMock } from '../assets/mock';
+// import { data } from '../assets/mock/xuxuTestMock';
 
 /*
 XuxuService 类将会提供一个可注入的服务，并且它还可以拥有自己的待注入的依赖。 目前它还没有依赖.
@@ -11,9 +11,26 @@ XuxuService 类将会提供一个可注入的服务，并且它还可以拥有�
   providedIn: 'root'
 })
 export class XuxuService {
-
   constructor() { }
   getXuxuTestMock(): XuxuClass[] {
-    return xuxuTestMock;
+    let data = [
+      {
+        "id": 1,
+        "name": "a"
+      },
+      {
+        "id": 2,
+        "name": "b"
+      },
+      {
+        "id": 3,
+        "name": "c"
+      },
+      {
+        "id": 4,
+        "name": "d"
+      }
+    ]
+    return data;
   }
 }

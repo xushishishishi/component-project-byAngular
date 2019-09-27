@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms'; 
 import { AppComponent } from './app.component';
@@ -11,6 +10,9 @@ import { Demo1Component } from './demo1/demo1.component';
 import { Demo2Component } from './demo2/demo2.component';
 import { Parent1Component } from './parent1/parent1.component';
 import { Child1Component } from './child1/child1.component';
+import { ServiceDemoComponent } from './service-demo/service-demo.component';
+import { Parent2Component } from './parent2/parent2.component';
+import { Child2Component } from './child2/child2.component';
 
 @NgModule({
   // 属于此NgModule 的组件，指令和管道……自身组件
@@ -19,7 +21,10 @@ import { Child1Component } from './child1/child1.component';
     Demo1Component,
     Demo2Component,
     Parent1Component,
-    Child1Component
+    Child1Component,
+    ServiceDemoComponent,
+    Parent2Component,
+    Child2Component
   ],
   // 在此 NgModule中声明的组件模板需要其类导出的其他模块……导入的组件
   imports: [

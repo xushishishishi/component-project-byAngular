@@ -15,6 +15,7 @@ export class Demo2Component implements OnInit {
   ngOnInit() {
   }
 
+  // 后退
   goBack(): void {
     this.location.back();
   }

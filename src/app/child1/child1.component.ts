@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class Child1Component implements OnInit {
   @Input() msg: any;  // 通过Input接收父组件传过来的数据msg
+  @Input() run: any; //接受父组件传过来的run方法
   
   constructor() { }
 

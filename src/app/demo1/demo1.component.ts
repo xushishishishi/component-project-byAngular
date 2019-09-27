@@ -23,6 +23,7 @@ export class Demo1Component implements OnInit {
     { id: 9, name: 'Magma' },
     { id: 10, name: 'Tornado' }
   ]
+
   name = "2"
   values = ""
 

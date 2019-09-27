@@ -1,6 +1,7 @@
 import Mock from 'mockjs';
 
-Mock.mock('/api/user', {
+// Mock.mock('/api/user', 
+let data = {
     "data": {
         "list": [
             {
@@ -23,4 +24,7 @@ Mock.mock('/api/user', {
     },
     "recodeMsg": "success",
     "code": 200
-});
+}
+// );
+
+export default data;
