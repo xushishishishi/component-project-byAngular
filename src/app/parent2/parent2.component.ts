@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./parent2.component.css']
 })
 export class Parent2Component implements OnInit {
-
+  names = ['Mr. IQ', '   ', '  Bombasto  '];
   constructor() { }
 
   ngOnInit() {

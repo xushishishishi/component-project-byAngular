@@ -16,6 +16,7 @@ export class Child2Component implements OnInit {
 
   @Input()
   set name(name: string) {
+    // trim() 方法用于删除字符串的头尾空格
     this._name = (name && name.trim()) || '<no name set>';
   }
 
