@@ -15,6 +15,7 @@ import { Parent2Component } from './parent2/parent2.component';
 import { Child2Component } from './child2/child2.component';
 import { Child3Component } from './child3/child3.component';
 import { Parent3Component } from './parent3/parent3.component';
+import { ComponentModule } from './component/component.module';
 
 @NgModule({
   // 属于此NgModule 的组件，指令和管道……自身组件
@@ -28,7 +29,7 @@ import { Parent3Component } from './parent3/parent3.component';
     Parent2Component,
     Child2Component,
     Child3Component,
-    Parent3Component
+    Parent3Component,
   ],
   // 在此 NgModule中声明的组件模板需要其类导出的其他模块……导入的组件
   imports: [
@@ -36,6 +37,7 @@ import { Parent3Component } from './parent3/parent3.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ComponentModule,
     // HttpClientInMemoryWebApiModule,
   ],
   // 创造者服务，这NgModule有助于服务的全球征集; 它们可以在应用的所有部分中访问。（您也可以在组件级别指定提供程序，这通常是首选。）
