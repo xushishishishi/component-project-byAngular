@@ -1,0 +1,19 @@
+<div>
+  <table class="xl-table">
+    <thead>
+      <tr class="xl-table-title">
+        <td *ngFor="let titleItem of title" class="titleItem.class">{{titleItem.name}}</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="content-main" *ngIf="1>data.length">
+        <td colspan="8">
+          <p class="noCoupon">Oops! No coupon left.</p>
+        </td>
+      </tr>
+      <tr class="content-main" *ngFor="let listItem of tableData">
+        <td *ngFor="let valueItem of mappedValue" class="{{valueItem.class}}">{{listItem[valueItem.value]}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
