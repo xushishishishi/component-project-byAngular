@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  hmr: false, // 是否启用热模块替换
 };
