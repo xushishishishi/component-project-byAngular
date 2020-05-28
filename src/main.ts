@@ -1,3 +1,5 @@
+// 热模块替换引入的文件
+// /// <reference path="../node_modules/@types/node/index.d.ts" />
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
@@ -8,6 +10,11 @@ import { hmrBootstrap } from './hmr';
 const bootstrap = () => platformBrowserDynamic().bootstrapModule(AppModule);
 if (environment.production) {
   enableProdMode();
+  // 重写console
+  window.console.log = function () { };
+  window.console.info = function () { };
+  window.console.warn = function () { };
+  window.console.error = function () { };
 } else {
   if (environment.hmr) {
     // tslint:disable-next-line:no-string-literal
